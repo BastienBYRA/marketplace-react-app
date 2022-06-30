@@ -1,0 +1,78 @@
+.basket-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 9px;
+    width: 80%;
+}
+
+.basket-total {
+    background-color: white;
+    padding: 20px 20px;
+     margin: 20px 0px;
+     margin-right: 20px;
+    padding-top: 10px;
+    height: 210px;
+    width: 20%;
+}
+
+.basket-separator {
+    display: flex;
+}
+
+.basket-total-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.basket-total-buttons > button {
+    cursor: pointer;
+    border: solid;
+    padding: 8px 30px;
+    background-color: black;
+    border-radius: 8px;
+    font-size: 28px;
+    color: white;
+    transition: 0.2s;
+}
+
+.basket-total-validate {
+    margin-bottom: 10px;
+}
+
+.basket-total-validate:hover {
+    border: solid black;
+    background-color: transparent;
+    color: black;
+}
+
+.basket-total-delete:hover {
+    border: solid black;
+    background-color: transparent;
+    color: black;
+}
+
+.basket-empty {
+    height: 200px;
+    border-radius: 10px;
+    padding: 5px 25px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 20px 50px;
+}
+
+.basket-empty-btn {
+    cursor: pointer;
+    border: solid;
+    padding: 30px 50px;
+    background-color: black;
+    border-radius: 8px;
+    font-size: 28px;
+    color: white;
+    transition: 0.2s;
+}
+
+.basket-empty-btn:hover {
+    border: solid black;
+    background-color: transparent;
+    color: black;
+}

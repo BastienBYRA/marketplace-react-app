@@ -1,0 +1,44 @@
+.marketplace {
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.marketplace-load {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.marketplace-category {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center;
+    justify-content: center; */
+    padding-left: 50px;
+    padding-top: 15px;
+    margin-bottom: -10px;
+}
+
+.marketplace-category-button {
+    cursor: pointer;
+    border: solid;
+    padding: 8px 25px;
+    background-color: black;
+    border-radius: 8px;
+    font-size: 20px;
+    color: white;
+    transition: 0.2s;
+    margin: 0px 10px;
+}
+
+.marketplace-category-button:hover {
+    border: solid black;
+    background-color: transparent;
+    color: black;
+}
