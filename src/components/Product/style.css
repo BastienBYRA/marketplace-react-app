@@ -3,18 +3,19 @@
     margin: 10px 30px;
     background-color: white;
     border-radius: 20px;
-    /* border: solid #373737 1px; */
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    padding: 0px 10px;
 }
 
 .product-image {
     padding: 10px 10px;
     left: 0px;
-    height: 250px;
-    width: 250px;
+    /* height: 250px;
+    width: 250px; */
     object-fit: scale-down;
-    /* object-fit: cover; */
-    /* max-width: 20%; */
+    max-width: 20%;
+    max-height: 250px;
+    max-width: 180px;
 }
 
 .product-star-icon {

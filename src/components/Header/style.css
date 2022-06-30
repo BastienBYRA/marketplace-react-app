@@ -4,6 +4,7 @@
     align-items: center;
     padding: 0px 20px;
     justify-content: space-evenly;
+    width:100%;
 }
 
 .header-logo {
