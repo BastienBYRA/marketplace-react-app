@@ -1,15 +1,15 @@
 .card-container {
-    /* padding: 20px 20px; */
     max-width: 450px;
-    /* display: flex; */
-    /* align-items: flex-start; */
-
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 20px;
     margin: 20px 5px;
-
+    transition: 0.3s;
 }
+
+/* .card-container:hover {
+    max-width: 500px;
+} */
 
 .card-main {
     cursor: pointer;

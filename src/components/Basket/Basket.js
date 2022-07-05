@@ -55,6 +55,7 @@ const Basket = ({basket, emptyVariable, handleChangeBasket}) => {
             </div>}
 
             {basket.length === 0 &&
+            <div className="basket-empty-separator">
                 <div className='basket-empty'>
                     <h1>Your basket is empty</h1>
                     <button className='basket-empty-btn' onClick={
@@ -63,7 +64,8 @@ const Basket = ({basket, emptyVariable, handleChangeBasket}) => {
                             emptyVariable('DELETE_SEARCH_SPECIFIC_CATEGORY');
                         }
                     }>Buy something ?</button>
-                </div>}
+                </div>
+            </div>}
         </div>
     )
 }

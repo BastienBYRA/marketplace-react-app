@@ -6,7 +6,7 @@ import LightModeIcon from '@mui/icons-material/LightMode';
 import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
 import { useNavigate } from 'react-router-dom';
 
-const Header = ({lightMode, emptyVariable}) => {
+const Header = ({emptyVariable}) => {
 
     const navigate = useNavigate();
 

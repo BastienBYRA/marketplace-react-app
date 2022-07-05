@@ -17,6 +17,7 @@
 
 .basket-separator {
     display: flex;
+    padding-top: 90px;
 }
 
 .basket-total-buttons {
@@ -76,4 +77,8 @@
     border: solid black;
     background-color: transparent;
     color: black;
+}
+
+.basket-empty-separator {
+    padding-top: 80px;
 }

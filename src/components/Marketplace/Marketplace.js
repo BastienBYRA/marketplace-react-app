@@ -4,6 +4,8 @@ import Card from './../Card/Card';
 import './style.css';
 import Header from '../Header/Header';
 import CircularProgress from '@mui/material/CircularProgress';
+// import menfashion from "../../assets/video/mensclothings.gif"
+// import rrr from "../../assets/video/men's clothing.gif"
 
 const Marketplace = ({allProducts, lightMode, allCategories, chooseCategory, emptyVariable}) => {
     let productElements = false;
@@ -38,6 +40,10 @@ const Marketplace = ({allProducts, lightMode, allCategories, chooseCategory, emp
                 <p>Retreive data from the Fakestore API.</p>
                 <p>Can be slow, take your time.</p>
             </div>}
+
+            {/* <img src="../../assets/video/men's clothing.gif" alt="this slowpoke moves"  width="100%" /> */}
+
+
         </div>
     )
 }

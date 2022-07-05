@@ -1,0 +1,108 @@
+.title-presentation {
+    /* position: relative;
+    bottom: 90px;
+    left: 40px; */
+}
+
+.list-presentation-video {
+    padding-top: 75px;
+}
+
+.container-presentation {
+    /* margin-bottom: -86px; */
+    margin-bottom: -57px;
+}
+
+/* .title-container-presentation {
+    cursor: pointer;
+    border: solid;
+    background-color: black;
+    border-radius: 8px;
+    font-size: 80%;
+    color: white;
+    transition: 0.2s;
+
+    position: relative;
+    bottom: 110px;
+    left: 60px;
+    display: inline-block;
+    padding: 0px 40px;
+}
+
+.title-container-presentation:hover {
+    border: solid black;
+    background-color: transparent;
+    color: black;
+    opacity: 1;
+}
+
+.title-container-presentation-white {
+    cursor: pointer;
+    border: solid;
+    background-color: white;
+    border-radius: 8px;
+    font-size: 80%;
+    color: black;
+    transition: 0.2s;
+
+
+    position: relative;
+    bottom: 110px;
+    left: 60px;
+    display: inline-block;
+    padding: 0px 40px;
+}
+
+.title-container-presentation-white:hover {
+    border: solid white;
+    background-color: transparent;
+    color: white;
+} */
+
+.button-presentation {
+    cursor: pointer;
+    border: solid;
+    background-color: black;
+    border-radius: 8px;
+    font-size: 20px;
+    color: white;
+    transition: 0.2s;
+    margin: 0px 10px;
+    padding: 12px 40px;
+
+    position: relative;
+    bottom: 80px;
+    left: 50px;
+    display: inline-block;
+}
+
+.button-presentation:hover {
+    border: solid black;
+    background-color: transparent;
+    color: black;
+    opacity: 1;
+}
+
+.button-presentation-white {
+    cursor: pointer;
+    border: solid;
+    background-color: white;
+    border-radius: 8px;
+    font-size: 20px;
+    color: black;
+    transition: 0.2s;
+    margin: 0px 10px;
+    padding: 12px 40px;
+
+    position: relative;
+    bottom: 80px;
+    left: 50px;
+    display: inline-block;
+}
+
+.button-presentation-white:hover {
+    border: solid white;
+    background-color: transparent;
+    color: white;
+    opacity: 1;
+}

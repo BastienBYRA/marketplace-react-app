@@ -67,6 +67,8 @@ const Detail = ({allProducts, lightMode, emptyVariable, handleChangeBasket, bask
         <div className="detail">
             <Header lightMode={lightMode} emptyVariable={emptyVariable} />
             {productDetail &&
+            <div className='detail-separator'>
+                <p className="detail-back-previous" onClick={() => navigate("/article")}> ‹ Return to the previous page</p>
                 <div className="detail-container">
                     {/* <a className="detail-link-image" href="https://google.com"> */}
                         <img className='detail-image' src={productDetail.image} />
@@ -93,12 +95,10 @@ const Detail = ({allProducts, lightMode, emptyVariable, handleChangeBasket, bask
 
                             {!array && <button className='' disabled>Sold out <ShoppingCartSharpIcon /></button>}
 
-                            
-
                         </div>
-                        
                     </div>
                 </div>
+            </div>
             }
             {!productDetail && <div className='detail-load'>
                 <CircularProgress size={50} />

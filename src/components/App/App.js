@@ -6,6 +6,7 @@ import {BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
 import Detail from '../Detail/Detail';
 import { nanoid } from 'nanoid';
 import Basket from '../Basket/Basket';
+import Home from '../Home/Home';
 
 function App() {
   const [allProducts, setAllProducts] = useState(undefined);
@@ -189,6 +190,15 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={
+          <Home
+            key={nanoid()}
+            lightMode={ lightMode }
+            allCategories={ localAllCategories }
+            chooseCategory = {(e) => showOneCategory(e)}
+            emptyVariable = {emptyVariable}
+          />}
+        />
+        <Route path="/article" element={
           <Marketplace
             key={nanoid()}
             allProducts={ categoryProducts || localAllProducts || allProducts }
