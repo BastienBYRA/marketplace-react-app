@@ -89,7 +89,7 @@ const Detail = ({allProducts, lightMode, emptyVariable, handleChangeBasket, bask
                             </select>}
 
                             {array && <button className='detail-purchase-button' onClick={() => {
-                                navigate("/");
+                                navigate("/article");
                                 handleChangeBasket(productDetail, numberProduct, 'ADD_PRODUCT_TO_BASKET');  
                             }}>Purchase <ShoppingCartSharpIcon /></button>} {alreadyInBasket && <i style={{paddingLeft: '20px'}}>Already {alreadyInBasket} in the basket</i>}
 

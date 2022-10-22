@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./style.css";
 
-const Product = ({
+const ProductInBasket = ({
   productDetail,
   handleChangeBasket,
   deleteProductFromBasket,
@@ -27,14 +27,6 @@ const Product = ({
       <img className="product-image" src={productDetail.product.image} />
       <div className="product-information">
         <h1>{productDetail.product.title}</h1>
-        <h2>Category : {productDetail.product.category}</h2>
-        <h3>
-          {productDetail.product.rating.rate}{" "}
-          <span className="product-star-icon">★</span>{" "}
-          <span className="rating-text">
-            {productDetail.product.rating.count} ratings
-          </span>
-        </h3>
         <p>{productDetail.product.description}</p>
         <div className="product-basket-quantity">
           Quantity :{" "}
@@ -85,4 +77,4 @@ const Product = ({
   );
 };
 
-export default Product;
+export default ProductInBasket;

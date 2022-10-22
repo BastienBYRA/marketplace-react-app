@@ -2,21 +2,17 @@
     display: flex;
     flex-direction: column;
     margin-top: 9px;
-    width: 80%;
 }
 
 .basket-total {
     background-color: white;
     padding: 20px 20px;
      margin: 20px 0px;
-     margin-right: 20px;
     padding-top: 10px;
     height: 210px;
-    width: 20%;
 }
 
 .basket-separator {
-    display: flex;
     padding-top: 90px;
 }
 
@@ -81,4 +77,29 @@
 
 .basket-empty-separator {
     padding-top: 80px;
+}
+
+@media (max-width:800px) { 
+    .basket-separator {
+        display: block;
+    }
+
+    .basket-container {
+        width: 100%;
+    }
+}    
+
+@media (min-width:800px) { 
+    .basket-separator {
+        display: flex;
+    }
+
+    .basket-container {
+        width: 80%;
+    }
+
+    .basket-total {
+        margin-right: 20px;
+        width: 20%;
+    }
 }

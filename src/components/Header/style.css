@@ -11,10 +11,12 @@
 }
 
 .header-logo {
-    height: 80px;
+    width: 100%;
     cursor: pointer;
     margin-right: auto;
-    margin-left: 30px
+    margin-left: 30px;
+    max-width: 300px;
+    width: 50%;
 }
 
 .header-button {
