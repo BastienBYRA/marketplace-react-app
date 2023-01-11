@@ -22,17 +22,30 @@ const Home = ({ allCategories, chooseCategory, emptyVariable }) => {
   //     ))
   // }
 
-  const focusImg = (e) => {
-    console.log(e);
+  const buttonState = (e, state) => {
+    // state == true
+    //   ? (e.target.parentNode.children[1].style.display = "block")
+    //   : (e.target.parentNode.children[1].style.display = "none");
+    // if (state == true) {
+    //   // e.target.parentNode.children[1].style.transition = "all 2s";
+    //   e.target.parentNode.children[1].style.display = "block";
+    // } else {
+    //   e.target.parentNode.children[1].style.display = "none";
+    // }
   };
 
   if (allCategories) {
     presentationElements = allCategories.map((category) => (
-      <div className="div-presentation-categ">
+      <div key={nanoid()} className="div-presentation-categ">
         <img
           className="img-presentation-categ"
           src={require(`../../assets/presentation/${category}.jpg`)}
-          alt={category}
+          alt={category.charAt(0).toUpperCase() + category.slice(1)}
+          onClick={(e) => {
+            chooseCategory(e.target.alt);
+            navigate("/article");
+            window.scrollTo(0, 0);
+          }}
         />
         <input
           className="button-presentation"
@@ -40,7 +53,7 @@ const Home = ({ allCategories, chooseCategory, emptyVariable }) => {
           type="button"
           value={category.charAt(0).toUpperCase() + category.slice(1)}
           onClick={(e) => {
-            chooseCategory(e);
+            chooseCategory(e.target.value);
             navigate("/article");
             window.scrollTo(0, 0);
           }}
@@ -50,15 +63,16 @@ const Home = ({ allCategories, chooseCategory, emptyVariable }) => {
   }
 
   return (
-    <div className="container-home">
+    <>
       <Header emptyVariable={emptyVariable} />
-      <div
-        className="list-presentation-video"
-        style={{ display: "flex", flexWrap: "wrap" }}
-      >
-        {presentationElements}
+      <div className="container-home">
+        <div className="banderole-home">
+          <img src={require(`../../assets/presentation/banner-img.jpg`)}></img>
+        </div>
+
+        <div className="category-presentation">{presentationElements}</div>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -1,11 +1,15 @@
-.title-presentation {
-    /* position: relative;
-    bottom: 90px;
-    left: 40px; */
+.container-home {
+    margin-top: 130px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 35px;
 }
 
-.list-presentation-video {
-    padding-top: 75px;
+.category-presentation {
+    /* padding-top: 75px; */
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .container-presentation {
@@ -27,12 +31,8 @@
     bottom: 5%;
     left: 4%;
     padding: 2% 4%;
-    /* margin: 0px 10px;
-    padding: 2% 4%;
-    position: relative;
-    bottom: 14%;
-    left: 2%;
-    display: inline-block; */
+
+    /* display: none; */
 }
 
 .button-presentation:hover {
@@ -42,7 +42,7 @@
     opacity: 1;
 }
 
-/* .button-presentation-white {
+.button-presentation-white {
     cursor: pointer;
     border: solid;
     background-color: white;
@@ -50,13 +50,11 @@
     font-size: 20px;
     color: black;
     transition: 0.2s;
-    margin: 0px 10px;
-    padding: 12px 40px;
 
-    position: relative;
-    bottom: 80px;
-    left: 50px;
-    display: inline-block;
+    position: absolute;
+    bottom: 5%;
+    left: 4%;
+    padding: 2% 4%;
 }
 
 .button-presentation-white:hover {
@@ -64,21 +62,22 @@
     background-color: transparent;
     color: white;
     opacity: 1;
-} */
+}
 
 .div-presentation-categ {
     position: relative;
 }
 
+.img-presentation-categ {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
 @media (max-width:1175px) { 
     .div-presentation-categ {
         width: 100%;
-    }
-
-    .img-presentation-categ {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
     }
 }
 
@@ -86,10 +85,24 @@
     .div-presentation-categ {
         width: 50%;
     }
+}
 
-    .img-presentation-categ {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+.category-presentation .img-presentation-categ {
+    -webkit-transition: 400ms ease 100ms;
+    -moz-transition: 400ms ease 100ms;
+    transition: 400ms ease 100ms;
+}
+
+.category-presentation:hover .img-presentation-categ:not(:hover) {
+    filter: blur(4px);
+}
+
+.banderole-home {
+    width: 100%;
+}
+
+.banderole-home > img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
 }
